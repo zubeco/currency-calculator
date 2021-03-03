@@ -1,0 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Abel&family=Montserrat&display=swap');
+
+*{
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+}
+
+.title-header{
+    font-family: 'Abel', sans-serif;
+    font-size: 30px;
+    justify-content: center;
+    text-align: center;
+    margin: 30px 0px;
+}
+
+

@@ -1,23 +1,17 @@
-import logo from './logo.svg';
+import React, {useState} from 'react';
 import './App.css';
+import Form from './components/Form';
+import Title from './components/Title';
 
-function App() {
+
+const App = () => {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Title />
+      <Form placeholder='USD' name='Dollar' currency='usd'/>
+      <Form placeholder='GBP' name='Pounds Sterling' currency='gbp'/>
+      <Form placeholder='JPY' name='Japanese Yen'  currency='jpy'/>
+      <Form placeholder='EUR' name='Euro'  currency='eur'/>
     </div>
   );
 }
