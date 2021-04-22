@@ -9,18 +9,22 @@
 
 .form-header {
   font-family: "Karla", sans-serif;
-  margin-left: 500px;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
   padding-bottom: 20px;
+  margin-left: 100px;
 }
 
 .general {
   display: flex;
+  justify-content: center;
   flex-direction: column;
   padding-bottom: 10px;
 }
 
 .input-class {
-  width: 430px;
+  width: 80%;
   height: 30px;
   border: 1.5px solid black;
   border-radius: 2px;
@@ -30,4 +34,17 @@
   font-family: "Montserrat", sans-serif;
   font-size: 18px;
   padding-bottom: 5px;
+}
+@media all and (max-width: 700px){
+  .form-header{
+    margin-left: 50px;
+  }
+
+
+}
+
+@media all and (max-width: 450px){
+  .form-header{
+    margin-left: 30px;
+  }
 }
