@@ -1,5 +1,6 @@
 import React, {useEffect, useState} from 'react';
 import './App.css';
+import Footer from './components/Footer';
 import Form from './components/Form';
 import Title from './components/Title';
 import currencies from './currencies'
@@ -29,9 +30,7 @@ const App = () => {
       )
   }, [])
 
-  const color = {
-     backgroundColor: 'green'
-  }
+
 
 
 
@@ -49,6 +48,7 @@ const App = () => {
       ) : (
         <p>Loading...</p>
       )}
+      <Footer />
     </div> 
   );
 }
