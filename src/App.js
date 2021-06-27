@@ -29,6 +29,10 @@ const App = () => {
       )
   }, [])
 
+  const color = {
+     backgroundColor: 'green'
+  }
+
 
 
 
