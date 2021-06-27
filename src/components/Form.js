@@ -1,6 +1,5 @@
 import React, {useState} from 'react';
 import './Form.css'
-import currencies from '../currencies'
 
 const Form = ({placeholder, name, rate}) => {
     const [ngnValue, setngnValue] = useState(0)

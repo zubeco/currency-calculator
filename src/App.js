@@ -10,7 +10,7 @@ const App = () => {
   const [rates, setRates] = useState(null);
 
   useEffect(() => {
-    const API_KEY = '5567c2fa34f8ee39752a430237718673';
+    
     const url = 'https://api.exchangerate.host/latest?base=NGN&symbols=USD,EUR,GBP,JPY';
     fetch(url)
       .then(res => res.json())
@@ -30,8 +30,10 @@ const App = () => {
   }, [])
 
 
+
+
   return (
-    <div className="App">
+    <div className="app-container"  >
       <Title />
       {rates ? (
         <>
