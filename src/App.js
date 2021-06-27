@@ -29,9 +29,13 @@ const App = () => {
       )
   }, [])
 
+  const color = {
+     backgroundColor: 'green'
+  }
+
 
   return (
-    <div className="App">
+    <div className="app-container"  >
       <Title />
       {rates ? (
         <>
